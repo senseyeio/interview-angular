@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IServer } from 'src/app/models/server';
+import { IServer } from '../../models/server';
 
 @Component({
   selector: 'app-server-list',

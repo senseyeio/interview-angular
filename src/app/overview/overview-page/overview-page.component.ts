@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { ApiService } from 'src/app/api/api.service';
-import { IServer } from 'src/app/models/server';
+import { ApiService } from '../../api/api.service';
+import { IServer } from '../../models/server';
 
 @Component({
   selector: 'app-overview-page',

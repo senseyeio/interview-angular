@@ -10,8 +10,8 @@ Feel free to ask questions or Google things at any point.
 
 ## Tasks
 
-1. Checkout the repo, install dependencies with `npm` or `yarn` and run up the app (http://localhost:4200)
-
+1. Clone the repo, install dependencies with `npm` or `yarn` and run up the app (http://localhost:4200)
+  - Alternatively, you can work on the project online using Stackblitz: https://stackblitz.com/github/senseyeio/interview-angular
 
 2. Update the `ServerList` component so that it shows a "card" for each server
 - The `ApiService` is already in place and provides some fake data to show
