@@ -1,27 +1,34 @@
-# InterviewAngular
+# Interview Exercise
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+## Instructions
 
-## Development server
+This exercise is a pair-programming session with you leading and us here to support you.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Please run through the tasks below and be as vocal as you can during this 30 minute session. Don't worry about getting through all of the tasks or how long you spend on each. The tasks are there to guide you and prompt conversation, so that we can get a feel for how you solve problems and think about code. 
 
-## Code scaffolding
+Feel free to ask questions or Google things at any point.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tasks
 
-## Build
+1. Checkout the repo, install dependencies with `npm` or `yarn` and run up the app (http://localhost:4200)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+2. Update the `ServerList` component so that it shows a "card" for each server
+- The `ApiService` is already in place and provides some fake data to show
+- For each server, show the `name` and `description`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+3. For each server card, show a visual indication of the _status_ of that server
+- Servers can be "up" or "down", represented by the `isUp` boolean
+- It is up to you how you choose to present this
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 
-## Further help
+4. Show the uptime on the server card
+- If the server has been up for less than one day, show "Up for < 1 day"
+- Otherwise, show "Up for n days", with n rounded to an integer
+- There is no need to worry about showing fractions, or weeks/months/years etc.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+5. In the `OverviewPage` component, break apart the "all servers" list into two separate lists.
+- The first should have the title "Attention Needed" and be filtered to show only servers which are currently down
+- The second should have the title "Active Servers" and be filtered to show only servers which are up
