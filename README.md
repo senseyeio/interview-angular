@@ -25,7 +25,7 @@ Feel free to ask questions or Google things at any point.
 
 4. Show the uptime on the server card
 - If the server has been up for less than one day, show "Up for < 1 day"
-- Otherwise, show "Up for n days", with n rounded to an integer
+- Otherwise, show "Up for n days", with n rounded down to an integer
 - There is no need to worry about showing fractions, or weeks/months/years etc.
 
 

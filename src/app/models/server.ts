@@ -3,7 +3,7 @@ export interface IServer {
   name: string;
   description: string;
   isUp: boolean;
-  uptime: number; // in seconds
+  uptimeMinutes: number;
 }
 
 export const MOCK_SERVERS: IServer[] = [
@@ -12,25 +12,25 @@ export const MOCK_SERVERS: IServer[] = [
     name: `Web-001`,
     description: `Main web server`,
     isUp: true,
-    uptime: 345600
+    uptimeMinutes: 345600
   }, {
     id: `w002`,
     name: `Web-002`,
     description: `Secondary web server`,
     isUp: true,
-    uptime: 604800
+    uptimeMinutes: 604800
   }, {
     id: `db001`,
     name: `DB-001`,
     description: `Database server`,
     isUp: false,
-    uptime: 0
+    uptimeMinutes: 0
   },
   {
     id: `db002`,
     name: `DB-002`,
     description: `Secondary database server`,
     isUp: true,
-    uptime: 240
+    uptimeMinutes: 240
   },
 ];
